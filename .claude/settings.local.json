@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cargo build *)",
+      "Bash(cargo +stable-x86_64-pc-windows-msvc build)",
+      "Bash(where gcc *)",
+      "Bash(where dlltool *)",
+      "Bash(where link *)",
+      "Bash(rustup target *)",
+      "Bash(cmd /c \"where /R \\\\\"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\\" link.exe 2>nul\")",
+      "Bash(cmd /c \"where /R \\\\\"C:\\\\Program Files \\(x86\\)\\\\Microsoft Visual Studio\\\\\" link.exe 2>nul\")",
+      "Bash(cmd /c \"where /R \\\\\"C:\\\\BuildTools\\\\\" link.exe 2>nul\")",
+      "Bash(cmd /c \"dir /s /b \\\\\"C:\\\\Program Files \\(x86\\)\\\\Windows Kits\\\\10\\\\bin\\\\*link.exe\\\\\" 2>nul\")",
+      "Bash(cmd /c \"dir /s /b \\\\\"C:\\\\Program Files\\\\LLVM\\\\bin\\\\*lld-link*\\\\\" 2>nul\")",
+      "Bash(rustc +stable-x86_64-pc-windows-gnu *)",
+      "Bash(cmd *)",
+      "PowerShell(cargo build *)",
+      "PowerShell(cargo run *)",
+      "Bash(del dependencies.dot cycles.dot)"
+    ]
+  }
+}
